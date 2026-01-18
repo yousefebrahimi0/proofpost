@@ -1,0 +1,51 @@
+{
+  "@context":  {
+    "@version": 1.1,
+    "proofpost": "https://proofpost.org/ns/v1#",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "sec": "https://w3id.org/security#",
+    
+    "ProofCard": "proofpost:ProofCard",
+    "VerificationBundle": "proofpost:VerificationBundle",
+    
+    "verificationBundle": {
+      "@id": "proofpost:verificationBundle",
+      "@type": "@id"
+    },
+    "contentHash": {
+      "@id":  "proofpost:contentHash",
+      "@type": "xsd:string"
+    },
+    "hashAlgorithm": {
+      "@id": "proofpost: hashAlgorithm",
+      "@type": "xsd:string"
+    },
+    "captureTimestamp": {
+      "@id": "proofpost:captureTimestamp",
+      "@type": "xsd:dateTime"
+    },
+    "archiveUrl": {
+      "@id": "proofpost:archiveUrl",
+      "@type": "@id"
+    },
+    "witnessSignatures": {
+      "@id": "proofpost: witnessSignatures",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    
+    "Ed25519Signature2020": "sec:Ed25519Signature2020",
+    "signature": {
+      "@id": "sec:signature",
+      "@type": "@id"
+    },
+    "signatureValue": {
+      "@id": "sec:signatureValue",
+      "@type": "xsd:string"
+    },
+    "creator": {
+      "@id": "sec:creator",
+      "@type": "@id"
+    }
+  }
+}
