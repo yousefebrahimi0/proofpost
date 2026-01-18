@@ -1,0 +1,35 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "https://proofpost.org/ns/v1"
+  ],
+  "id": "https://proofpost.example/cards/550e8400-e29b-41d4-a716-446655440000",
+  "type":  "ProofCard",
+  "attributedTo": "https://mastodon.social/@journalist",
+  "created": "2026-01-15T14:30:00Z",
+  "summary": "Verified screenshot of official government announcement",
+  "verificationBundle":  {
+    "type": "VerificationBundle",
+    "contentHash": "sha256:9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+    "hashAlgorithm": "sha256",
+    "captureTimestamp": "2026-01-15T14:25:00Z",
+    "archiveUrl": "https://web.archive.org/web/20260115142500/https://gov.example/announcement",
+    "contentType": "text/html",
+    "signature": {
+      "type": "Ed25519Signature2020",
+      "creator": "https://mastodon.social/@journalist",
+      "created": "2026-01-15T14:30:00Z",
+      "signatureValue": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..BASE64_SIGNATURE_HERE"
+    },
+    "witnessSignatures": [
+      {
+        "type": "Ed25519Signature2020",
+        "creator": "https://newsroom.example/@editor",
+        "created": "2026-01-15T15:00:00Z",
+        "signatureValue": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19.. WITNESS_SIGNATURE_HERE"
+      }
+    ]
+  },
+  "inReplyTo": "https://mastodon.social/@journalist/123456789",
+  "to": ["https://www.w3.org/ns/activitystreams#Public"]
+}
